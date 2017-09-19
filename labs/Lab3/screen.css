@@ -64,10 +64,11 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: sans-serif; /* 1 */
-  font-size: 100%; /* 1 */
+  font-family: monospace; /* 1 */
+  font-size: 120%; /* 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
+    width: auto;
 }
 
 /**
@@ -217,8 +218,59 @@ textarea {
   font: inherit; /* 2 */
 }
 
-/* start my css */
+/* David Sobel */
 
-label, input {
+input {
   display: block;
+  width: inherit;
+}
+body{
+    background-color: mediumpurple;
+}
+label {
+  display: block;
+  background-color: #66ccff;
+  text-align: center;
+  font-family: monospace;
+}
+
+.placeholder {
+    font-family: monospace;
+}
+
+div {
+    display: block;
+    padding: 30px;
+    width: auto;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: azure
+}
+
+h3 {
+    font-family: monospace;
+    font-weight: bold;
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    }
+
+@media screen and (min-width: 480px) {
+  label {
+    display: inline-block;
+    color: blueviolet;
+    background-color: azure;
+    margin-right: 5px;
+    font-size: 1.3em;
+  }
+    
+    
+  div {
+    display: block;
+    
+  }
 }

@@ -73,6 +73,23 @@ placeholder{
   padding: 8px;
 }
 
+button 
+  {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}  
+
+
 /**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
@@ -104,6 +121,7 @@ html [type="button"], /* 1 */
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button; /* 2 */
+  
 }
 
 /**
@@ -222,89 +240,73 @@ textarea {
 
 /* David Sobel */
 
+
 [type="submit"]{
  margin-left: auto;
   margin-right: auto;
-    width: inherit;
+  width: 50%;
   margin-top: 12%;
   font-family: sans-serif;
-  background-color: aquamarine; 
+  background-color: aliceblue;
   border-color: azure;
 }
 
-input[type="date"] {
-     /*-webkit-align-items: center;
-     display: -webkit-inline-flex;*/
-     font-family: monospace;
-     background-color: aliceblue;
-     overflow: hidden;
-     padding: 0;
-     width: 200px;
-     -webkit-padding-start: 1px;
+
+#headimg {
+    margin: auto;
+    width: 25%;
+	display: block;
+    background-color: lightgray;
 }
 
-input[type="email"]{
-    font-family: monospace;
+input[type="email"], input[type="name"]{
+    font-family: 'Roboto', sans-serif;
     background-color: aliceblue;
-}
-
-input[type="tel"]{
-    font-family: monospace;
-    background-color: aliceblue;
+    color: blue;
+    border:none;
 }
     
 input {
   display: block;
-  border-color: azure;
+  border:none;
+  border-radius: 5px;
 }
-body{
-    background-color: mediumpurple;
-}
+
 label {
   display: block;
-  background-color: blueviolet;
-  color: azure;
-  text-align: center;
-  font-weight: bold;
-  font-family: monospace;
-  padding-bottom: inherit
+  color: gray;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+  padding-bottom: inherit;
 }
 
 div {
+    align-content: inherit;
     display: inline-block;
-    padding: 20px;
+    padding: 8%;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: azure;
+    background-color: lightgray;
     border-radius: 2%;
     border-color: black;
 }
 
 h5 {
-    font-family: monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
-    font-weight: bold;
+    color: darkslategray;
     text-align: center;
 }
 
 form {
     display: inline-block;
     }
+@media (max-width:280px){
+    div {
+    padding:100%;    
+}
 
-@media screen and (min-width: 480px) {
-  label {
-    display: inline-block;
-    color: blueviolet;
-    background-color: azure;
-    margin-right: 5px;
-    font-size: 1.3em;
-  }
-    
-    
-  div {
-    display: block;
-    
-  }
 }

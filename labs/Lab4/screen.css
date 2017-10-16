@@ -73,22 +73,6 @@ placeholder{
   padding: 8px;
 }
 
-button 
-  {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-}  
-
 
 /**
  * Show the overflow in IE.
@@ -153,6 +137,7 @@ button:-moz-focusring,
 
 fieldset {
   padding: 0.35em 0.75em 0.625em;
+
 }
 
 /**
@@ -198,6 +183,7 @@ textarea {
 [type="radio"] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
+  -webkit-transform: scale(1.5);
 }
 
 /**
@@ -241,39 +227,59 @@ textarea {
 /* David Sobel */
 
 
-[type="submit"]{
- margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  margin-top: 12%;
-  font-family: sans-serif;
-  background-color: aliceblue;
-  border-color: azure;
+ @media screen and (orientation:portrait) { height: 100vh;
+            width: 100vw; }
+
+
+body {
+    background-color: lightgray;
+   
 }
 
+[type="submit"]{
+ margin-left: 25%;
+  margin-right: auto;
+  vertical-align: baseline;
+  width: 50%;
+  font-family: 'Roboto', sans-serif;
+  background-color: aliceblue;
+  border: none;
+  border-radius: 5px;
+}
+
+#subdiv {
+    display: block;
+    margin-bottom: 30%;
+    width: 100%;
+}
 
 #headimg {
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     width: 25%;
 	display: block;
+    
     background-color: lightgray;
+}
+
+#mainformdiv {
+    width: auto;
 }
 
 input[type="email"], input[type="name"]{
     font-family: 'Roboto', sans-serif;
     background-color: aliceblue;
     color: blue;
+    border-radius: 5px;
     border:none;
-}
-    
-input {
-  display: block;
-  border:none;
-  border-radius: 5px;
+    max-width: 100%;
+    width: 100%;
+    display: block;
 }
 
+
 label {
-  display: block;
+  display: inline-block;
   color: gray;
   text-align: left;
   font-family: 'Roboto', sans-serif;
@@ -281,32 +287,29 @@ label {
   padding-bottom: inherit;
 }
 
-div {
-    align-content: inherit;
-    display: inline-block;
-    padding: 8%;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: lightgray;
-    border-radius: 2%;
-    border-color: black;
-}
-
 h5 {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     color: darkslategray;
     text-align: center;
 }
 
 form {
     display: inline-block;
+    width: 100%;
     }
-@media (max-width:280px){
-    div {
-    padding:100%;    
-}
 
+
+
+/*
+  Major Sixth Modular Scale:
+  http://www.modularscale.com/?22&px&1.667&web&text
+*/
+
+html {
+  font-size: 1.375em; /* 22px */
+  line-height: 1.182em; /* 26px / ~ 120% */
+  padding: 1.182em; /* 26px / ~ 120% */
+  text-rendering: optimizeLegibility;
+}
 }

@@ -314,7 +314,7 @@ html {
 }
 
 
-@media screen and (min-width: 460px) {
+@media screen and (min-width: 560px) {
     
 [type="submit"]{
  margin-left: 25%;
@@ -322,7 +322,7 @@ html {
   vertical-align: baseline;
   width: 50%;
   font-family: 'Roboto', sans-serif;
-  background-color: aliceblue;
+  background-color: aquamarine;
   border: none;
   border-radius: 5px;
 }
@@ -333,6 +333,10 @@ html {
     width: 100%;
 }
 
+    #headerdiv {
+        
+    }    
+    
 #headimg {
     margin-left: auto;
     margin-right: auto;
@@ -346,12 +350,12 @@ input {
   border-color: azure;
 }
 body{
-    background-color: mediumpurple;
+    background-color: blueviolet;
 }
 
  label {
   display: block;
-  background-color: blueviolet;
+ 
   color: azure;
   text-align: center;
   font-weight: bold;
@@ -359,7 +363,19 @@ body{
   padding-bottom: inherit
 }
 
-
+#mainformdiv {
+    display: inline-block;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: azure;
+    border-radius: 2%;
+    border-color: black;
+}
+}
+    
 h5 {
     font-family: monospace;
     font-size: 20px;

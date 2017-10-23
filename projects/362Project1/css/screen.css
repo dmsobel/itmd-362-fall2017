@@ -383,12 +383,11 @@ form {
     display: inline-block;
     }
 
-   @media only screen and (min-device-width: 768px) and (max-device-width: 1366px) {
+   @media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) {
   body {
-   transform: scale(0.8);
-   margin-top: 20%;
-   
-   // add prefixed versions too.
+   zoom: 0.8;
+   -moz-transform: scale(0.8);
 } 
+  
 
 }

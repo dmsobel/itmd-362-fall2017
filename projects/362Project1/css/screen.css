@@ -241,8 +241,9 @@ body {
   margin-right: auto;
   vertical-align: baseline;
   width: 50%;
+  color: darkgray;
   font-family: 'Roboto', sans-serif;
-  background-color: aliceblue;
+  background-color: #e0f2f1;
   border: none;
   border-radius: 5px;
 }
@@ -267,7 +268,7 @@ body {
 
 input[type="email"], #name{
     font-family: 'Roboto', sans-serif;
-    background-color: aliceblue;
+    background-color: #e0f2f1;
     border-radius: 5px;
     border:none;
     max-width: 100%;
@@ -297,8 +298,6 @@ form {
     display: inline-block;
     width: 100%;
     }
-
-
 
 /*
   Major Sixth Modular Scale:
@@ -343,8 +342,15 @@ html {
     
 input {
   display: block;
-  border-color: #B39DDB;
+  
   outline: none;    
+}
+ 
+::-webkit-input-placeholder {
+    color: lightgray;
+}
+:required {
+  outline: none;
 }
     
 body{
@@ -354,14 +360,13 @@ body{
  label {
   display: block;
   color: #64B5F6;
-  
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   padding-bottom: inherit
 }
 
 #mainformdiv {
-    display: inline-block;
+    display: block;
     padding: 20px;
     position: fixed;
     top: 50%;
@@ -369,6 +374,7 @@ body{
     transform: translate(-50%, -50%);
     border-radius: 2%;
     background-image: url('../pictures/formbgimg.png');
+    box-shadow: 50px;
     
 }
     
@@ -378,7 +384,10 @@ h5 {
     font-weight: bold;
     text-align: center;
 }
-
+    input::-moz-placeholder{
+        color: dimgray;
+    }
+    
 form {
     display: inline-block;
     }
@@ -387,6 +396,8 @@ form {
   body {
    zoom: 0.8;
    -moz-transform: scale(0.8);
+   -moz-transform-origin: 50% 0;
+   margin-top: 25%;
 } 
   
 

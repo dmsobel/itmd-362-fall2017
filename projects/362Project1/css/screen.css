@@ -232,7 +232,7 @@ textarea {
 
 
 body {
-    background-color: lightgray;
+    background-image: url(../pictures/backgroundimg.png);
    
 }
 
@@ -258,12 +258,12 @@ body {
     margin-right: auto;
     width: 25%;
 	display: block;
-    
     background-color: lightgray;
 }
 
 #mainformdiv {
     width: auto;
+    
 }
 
 input[type="email"], #name{
@@ -322,7 +322,7 @@ html {
   vertical-align: baseline;
   width: 50%;
   font-family: 'Roboto', sans-serif;
-  background-color: aquamarine;
+  background-color: a;
   border: none;
   border-radius: 5px;
 }
@@ -333,33 +333,36 @@ html {
     width: 100%;
 }
 
-    #headerdiv {
-        
+    #signdiv {
+      
+      padding: 10px;
+        margin: -18px;
+      border-top-left-radius: 2%;    
     }    
     
 #headimg {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
     width: 25%;
 	display: block;
-    background-color: azure;
+    background-image: url(../pictures/formbgimg.png);
 }
     
 input {
   display: block;
-  border-color: azure;
+  border-color: #B39DDB;
 }
 body{
-    background-color: blueviolet;
+    background-image: url('../pictures/backgroundimg.png');
 }
 
  label {
   display: block;
- 
-  color: azure;
+  color: #EDE7F6;
   text-align: center;
   font-weight: bold;
-  font-family: monospace;
+  font-family: "Roboto", sans-serif;
   padding-bottom: inherit
 }
 
@@ -370,14 +373,14 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: azure;
     border-radius: 2%;
-    border-color: black;
+    background-image: url('../pictures/formbgimg.png');
+    
 }
 }
     
 h5 {
-    font-family: monospace;
+    font-family: "Roboto", sans-serif;
     font-size: 20px;
     font-weight: bold;
     text-align: center;

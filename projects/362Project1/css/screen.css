@@ -226,6 +226,16 @@ textarea {
 
 /* David Sobel */
 
+::-webkit-input-placeholder {
+    color: lightgray;
+}
+:required {
+  outline: none;
+}
+
+input::-moz-placeholder{
+        color: dimgray;
+}
 
  @media screen and (orientation:portrait) { height: 100vh;
             width: 100vw; }
@@ -241,7 +251,7 @@ body {
   margin-right: auto;
   vertical-align: baseline;
   width: 50%;
-  color: darkgray;
+  color: gray;
   font-family: 'Roboto', sans-serif;
   background-color: #e0f2f1;
   border: none;
@@ -250,14 +260,14 @@ body {
 
 #subdiv {
     display: block;
-    margin-bottom: 30%;
+    margin-top: 10%;
     width: 100%;
 }
 
 #headimg {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     width: 25%;
 	display: block;
 }
@@ -266,11 +276,17 @@ body {
     width: auto;
 }
 
+#signdiv {
+    display: block;
+    margin-bottom: 10%;
+    }   
+
 input[type="email"], #name{
     font-family: 'Roboto', sans-serif;
     background-color: #e0f2f1;
     border-radius: 5px;
     border:none;
+    margin-bottom: 8%;
     max-width: 100%;
     width: 100%;
     display: block;
@@ -279,7 +295,8 @@ input[type="email"], #name{
 
 label {
   display: inline-block;
-  color: gray;
+  color: #64B5F6;
+  font-weight: 500;
   text-align: left;
   font-family: 'Roboto', sans-serif;
   font-size: 100%;
@@ -313,9 +330,10 @@ html {
 
 
 @media screen and (min-width: 660px) {
+
     
 [type="submit"]{
-    padding-top:;
+ 
  margin-left: 25%;
   margin-right: auto;
   vertical-align: baseline;
@@ -329,6 +347,7 @@ html {
 #subdiv {
     display: block;
     width: 100%;
+    margin-bottom: 10%; 
 }  
     
 #headimg {
@@ -342,15 +361,8 @@ html {
     
 input {
   display: block;
-  
+  margin-bottom: 8%;
   outline: none;    
-}
- 
-::-webkit-input-placeholder {
-    color: lightgray;
-}
-:required {
-  outline: none;
 }
     
 body{
@@ -364,10 +376,24 @@ body{
   font-family: "Roboto", sans-serif;
   padding-bottom: inherit
 }
+    
+#subdiv {
+    display: block;
+    margin-top: 10%;
+    width: 100%;
+}
 
+#signdiv {
+    display: block;
+    margin-bottom: 10%;
+}    
+    
 #mainformdiv {
     display: block;
-    padding: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 30px;
+ 
     position: fixed;
     top: 50%;
     left: 50%;
@@ -384,9 +410,7 @@ h5 {
     font-weight: bold;
     text-align: center;
 }
-    input::-moz-placeholder{
-        color: dimgray;
-    }
+    
     
 form {
     display: inline-block;
